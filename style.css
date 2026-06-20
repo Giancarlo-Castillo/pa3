@@ -1,0 +1,116 @@
+/* 1. Uso variables CSS para mantener la paleta de colores */
+:root {
+    --color-primario: #2c3e50;
+    --color-secundario: #007acc;
+    --color-fondo: #f5f7f9;
+    --color-texto: #333333;
+    --color-blanco: #ffffff;
+    --color-acento: #e74c3c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+/* 2. Uso los Selectores por ID y Flexbox para centrar elementos */
+#main-header {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    padding: 2.5rem 0; /* Uso de padding vertical */
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;     /* Centrado vertical */
+}
+
+/* 3. Uso Selectores por clase y navegación */
+.navbar {
+    background-color: var(--color-secundario);
+    padding: 1rem 0;
+}
+
+/* Uso Flexbox para organizar los enlaces en línea y centrados */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* para dar espacio entre las opciones del menú */
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--color-primario);
+}
+
+/* Este es del contenedor principal pero uso un limitador para el ancho y centrado usando margin auto */
+main {
+    max-width: 900px;
+    margin: 3rem auto; 
+    padding: 0 1.5rem; 
+}
+
+/* Estilos de la sección de inicio usando su ID */
+#inicio {
+    text-align: center;
+    margin-bottom: 4rem; /* margin para separar las secciones */
+    padding: 2rem;
+    background-color: var(--color-blanco);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#inicio h2 {
+    color: var(--color-primario);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+/* Estilos para la SECCION de publicaciones usando una Clase */
+.publicaciones h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primario);
+    font-size: 1.8rem;
+}
+
+/*La CLASE para los artículos o Post*/
+.post {
+    background-color: var(--color-blanco);
+    padding: 1.8rem; /* Espaciado interno */
+    margin-bottom: 1.5rem; /* Espaciado externo entre tarjetitas */
+    border-left: 6px solid var(--color-secundario);
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.post h3 {
+    color: var(--color-secundario);
+    margin-bottom: 0.8rem;
+}
+
+/* Mi Footer centrado usando Flexbox */
+#main-footer {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    padding: 1.5rem 0;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
