@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - GianTech Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabecera principal con foto de perfil -->
+    <header id="main-header">
+        <div class="header-content">
+            <!-- Usamos la misma ruta de la carpeta imagenes -->
+            <img src="imagenes/foto-gian.jpeg" alt="Giancarlo Castillo" class="foto-perfil-header">
+            <h1>GianTech Blog</h1>
+        </div>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="articulos.html">Artículos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="acercade.html">Acerca de...</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="main-servicios">
+        <section id="inicio">
+            <h2>Servicios Profesionales</h2>
+            <p>Además de mantener este Blog, también puedo ayudarte a transformar tus ideas en productos digitales robustos. Conoce cómo puedo ayudarte a escalar tu infraestructura, proteger tu información y automatizar tus procesos con las herramientas más avanzadas del mercado.</p>
+        </section>
+
+        <!-- Cuadrícula de Servicios (CSS Grid) -->
+        <section class="servicios-grid">
+            
+            <!-- Servicio 1: Desarrollo -->
+            <article class="servicio-card">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Código en una pantalla" class="servicio-img">
+                <div class="servicio-info">
+                    <h3>Desarrollo de Software</h3>
+                    <p>Creación de aplicaciones a medida, desde servidores REST robustos y APIs eficientes hasta interfaces web dinámicas. Arquitecturas escalables para resolver las necesidades específicas de tu negocio.</p>
+                </div>
+            </article>
+
+            <!-- Servicio 2: Bases de datos -->
+            <article class="servicio-card">
+                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80" alt="Servidores de bases de datos" class="servicio-img">
+                <div class="servicio-info">
+                    <h3>Administración de Base de Datos</h3>
+                    <p>Mantenimiento, optimización de consultas, auditoría y monitoreo de rendimiento. Aseguramos que tus datos estén siempre disponibles, consistentes y respaldados contra fallos.</p>
+                </div>
+            </article>
+
+            <!-- Servicio 3: Ciberseguridad -->
+            <article class="servicio-card">
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80" alt="Candado digital de ciberseguridad" class="servicio-img">
+                <div class="servicio-info">
+                    <h3>Asesoría en Ciberseguridad</h3>
+                    <p>Auditorías de seguridad, encriptación de datos, automatización de parches en equipos de red y protección de infraestructuras críticas contra vulnerabilidades modernas.</p>
+                </div>
+            </article>
+
+            <!-- Servicio 4: IA -->
+            <article class="servicio-card">
+                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&q=80" alt="Cerebro artificial" class="servicio-img">
+                <div class="servicio-info">
+                    <h3>Implementación de IA</h3>
+                    <p>Integración de modelos de Inteligencia Artificial en tus flujos de trabajo. Automatización de tareas, análisis predictivo y uso de wrappers para conectar con motores de IA de manera eficiente.</p>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer id="main-footer">
+        <p>2026 GianTech Blog.</p>
+    </footer>
+
+</body>
+</html>

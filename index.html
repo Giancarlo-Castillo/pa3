@@ -4,50 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog de Tecnología</title>
-    <link rel="stylesheet" href="style.css"> 
+    <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Cabecera principal con foto de perfil -->
     <header id="main-header">
-        <h1>GianTech Blog</h1>
+        <div class="header-content">
+            <!-- Usamos la misma ruta de la carpeta imagenes -->
+            <img src="imagenes/foto-gian.jpeg" alt="Giancarlo Castillo" class="foto-perfil-header">
+            <h1>GianTech Blog</h1>
+        </div>
     </header>
 
+    <!-- Menú de navegación unificado -->
     <nav class="navbar">
         <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#productos">Productos</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="articulos.html">Artículos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="acercade.html">Acerca de...</a></li>
         </ul>
     </nav>
 
+    <!-- Contenido principal -->
     <main>
+        <!-- Sección de Inicio con ID -->
         <section id="inicio">
-            <h2>Un vistazo al Futuro Tecnológico</h2>
-            <p>Bienvenido a mi espacio dedicado a la ingeniería de software, la administración de bases de datos y la infraestructura IT. Aquí compartiré mis conocimientos técnicos, nuevas tecnologías y experiencias personales en el mundo de la tecnología.</p>
+            <h2>Explorando el Futuro del Desarrollo</h2>
+            <p>Bienvenido a nuestro espacio dedicado a la ingeniería de software, la administración de bases de datos y la infraestructura IT. Aquí compartimos conocimientos técnicos, arquitecturas de sistemas y las últimas tendencias para optimizar tus flujos de trabajo.</p>
         </section>
 
+        <!-- Sección de Publicaciones con Clase -->
         <section class="publicaciones">
-            <h2>Mis Artículos Destacados</h2>
+            <h2>Artículos Destacados</h2>
             
             <article class="post">
-                <h3>Arquitectura de Servidores REST para Aplicaciones Modernas</h3>
-                <p>Descubre cómo diseñar y construir APIs robustas y escalables para conectar tus sistemas backend con interfaces frontend dinámicas de manera eficiente.</p>
+                <!-- Imagen añadida -->
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80" alt="Código en una pantalla de laptop">
+                <!-- Contenedor de texto con el padding original -->
+                <div class="post-content">
+                    <h3>Arquitectura de Servidores REST para Aplicaciones Modernas</h3>
+                    <p>Descubre cómo diseñar y construir APIs robustas y escalables para conectar tus sistemas backend con interfaces frontend dinámicas de manera eficiente.</p>
+                </div>
             </article>
 
             <article class="post">
-                <h3>Estrategias Avanzadas de Monitoreo en Bases de Datos</h3>
-                <p>Aprende a identificar cuellos de botella y optimizar el rendimiento en entornos corporativos de alta demanda y clusters replicados.</p>
+                <!-- Imagen añadida -->
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" alt="Servidores de bases de datos">
+                <div class="post-content">
+                    <h3>Estrategias Avanzadas de Monitoreo en Bases de Datos</h3>
+                    <p>Aprende a identificar cuellos de botella y optimizar el rendimiento en entornos corporativos de alta demanda y clusters replicados.</p>
+                </div>
             </article>
 
             <article class="post">
-                <h3>Contenedores y Seguridad: Cuándo y Cómo usar Docker</h3>
-                <p>Una guía práctica sobre la virtualización a nivel de sistema operativo y cómo aislar, desplegar y parchear tus aplicaciones de manera segura.</p>
+                <!-- Imagen añadida -->
+                <img src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=600&q=80" alt="Contenedores de Docker">
+                <div class="post-content">
+                    <h3>Contenedores y Seguridad: Cuándo y Cómo usar Docker</h3>
+                    <p>Una guía práctica sobre la virtualización a nivel de sistema operativo y cómo aislar, desplegar y parchear tus aplicaciones de manera segura.</p>
+                </div>
             </article>
         </section>
     </main>
 
+    <!-- Pie de página unificado -->
     <footer id="main-footer">
         <p>2026 GianTech Blog.</p>
     </footer>
